@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   font-family: "Bebas Neue", cursive;
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 50% 100%, 0 60%);
 }
 
 .card {
@@ -33,4 +34,12 @@
   padding-top: 5px;
   font-size: 28px;
   letter-spacing: 2px;
+}
+
+.card > p {
+  position: absolute;
+  transform: translateY(-1400%);
+  margin-left: 5px;
+  color: #f1f1f1;
+  font-size: 18px;
 }

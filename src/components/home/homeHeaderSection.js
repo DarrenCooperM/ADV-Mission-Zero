@@ -5,6 +5,7 @@ export default function HomeHeaderSection() {
     <div className={styles.homeBackgroundImg}>
       <div className={styles.homeContent}>
         <h1 className={styles.homeTitle}>Wanna get a pump?</h1>
+        <p className={styles.homeSubTitle}>Memberships from $23.99 per week</p>
         <div className={styles.inputSection}>
           <input
             className={styles.inputBox}

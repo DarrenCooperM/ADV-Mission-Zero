@@ -26,6 +26,15 @@
   background-color: rgba(0, 0, 0, 0.11);
 }
 
+.homeSubTitle {
+  color: #e6e5e4;
+  font-size: 13px;
+  margin-left: 18rem;
+  width: 35%;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.11);
+}
+
 .inputSection {
   display: flex;
   justify-content: center;
@@ -43,7 +52,7 @@
 }
 
 .inputBox::placeholder {
-  color: #f1f1f1;
+  color: #f1f1f19c;
 }
 
 .searchBtn {
@@ -53,9 +62,10 @@
   font-size: 25px;
   color: #f1f1f1;
   cursor: pointer;
+  margin-left: 1px;
 }
 
 .searchBtn:hover {
-  background-color: #ffffffc3;
+  background-color: #ffffff4c;
   color: black;
 }

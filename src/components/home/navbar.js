@@ -22,6 +22,9 @@ function navbar() {
               <a href="/">Why Us</a>
             </li>
             <li>
+              <a href="/">Refer a friend</a>
+            </li>
+            <li>
               <a href="/">Register | Login</a>
             </li>
           </ul>
