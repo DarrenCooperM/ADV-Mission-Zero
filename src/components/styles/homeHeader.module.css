@@ -3,10 +3,7 @@
     url("../images/backgroundImgGYM.png");
   background-position: top;
   background-repeat: no-repeat;
-  position: absolute;
-  width: 100%;
   background-size: cover;
-  object-fit: scale-down;
   height: 70vh;
   font-family: "Nunito Sans", sans-serif;
 }
@@ -17,7 +14,7 @@
   height: 50vh;
   align-items: center;
   padding-right: 15rem; */
-  margin-top: 12rem;
+  padding-top: 12rem;
   margin-left: 18rem;
   color: #e6e4e4;
   font-size: 80px;
