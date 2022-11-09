@@ -2,8 +2,8 @@ import React from "react";
 import styles from "../styles/homeContent.module.css";
 import gymPic from "../images/classImgOne.png";
 import gymPic2 from "../images/gymImgTw0.png";
-import gymPic3 from "../images/gymImgThree.png";
-import gymPic4 from "../images/gymImgFour.png";
+import gymPic3 from "../images/gymcardpic.png";
+import gymPic4 from "../images/gymcardpic6.png";
 
 export default function HomeContentSection() {
   return (

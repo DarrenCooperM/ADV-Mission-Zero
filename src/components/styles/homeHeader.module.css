@@ -20,7 +20,7 @@
   font-size: 80px;
   width: 35%;
   text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0.11);
+  /* background-color: rgba(0, 0, 0, 0.11); */
 }
 
 .homeSubTitle {
@@ -50,6 +50,8 @@
 
 .inputBox::placeholder {
   color: #f1f1f19c;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 1px;
 }
 
 .searchBtn {
@@ -60,9 +62,48 @@
   color: #f1f1f1;
   cursor: pointer;
   margin-left: 1px;
+  padding: 0;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+  padding: 0 4px 0 4px;
 }
 
 .searchBtn:hover {
-  background-color: #ffffff4c;
+  background-color: #ffffff2b;
   color: black;
+}
+
+@media (max-width: 600px) {
+  .homeTitle {
+    text-align: center;
+    font-size: 60px;
+    margin: 0;
+    width: 100%;
+    background: -webkit-linear-gradient(45deg, #867c7c, #eb5757);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .homeSubTitle {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .inputBox {
+    height: 40px;
+  }
+
+  .inputBox::placeholder {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .searchBtn {
+    text-align: center;
+    height: 40px;
+    font-size: 20px;
+    padding: 0;
+  }
 }

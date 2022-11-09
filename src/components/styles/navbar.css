@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background: linear-gradient(90deg, #200122, #6f0000);
   color: white;
   padding-left: 8rem;
   padding-right: 10rem;
@@ -39,7 +39,7 @@
 }
 
 .navbar-links li:hover {
-  background-color: #555;
+  background-color: rgba(85, 85, 85, 0.541);
 }
 
 .toggle-button {
@@ -89,5 +89,9 @@
 
   .navbar-links.active {
     display: flex;
+  }
+
+  .brand-title {
+    display: none;
   }
 }
