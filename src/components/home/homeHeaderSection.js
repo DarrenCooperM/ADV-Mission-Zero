@@ -11,12 +11,15 @@ export default function HomeHeaderSection() {
       <div className={styles.inputSection}>
         <input
           className={styles.inputBox}
+          title="Search"
           type="text"
           placeholder="Search for a local gym"
         ></input>
         <span>
           <FaSearch
+            title="Search"
             className={styles.searchIcon}
+            onMouseOver="Search"
             style={{
               width: "40px",
               height: "35px",

@@ -1,37 +1,46 @@
 .footerSection {
   background-color: #000000f3;
   color: #f1f1f1;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
   font-family: "Bebas Neue", cursive;
 }
 
 .footerContainer {
-  /* margin: 150px 20px 8rem 4rem; */
-  margin-top: 150px;
-  margin-bottom: 100px;
-  margin-right: 150px;
-  width: 10%;
   letter-spacing: 1px;
   text-decoration: none;
+  padding: 50px 0 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footerContentFlex {
+  width: 300px;
 }
 
 .footerTitle {
-  font-size: 25px;
+  font-size: 18px;
   margin-left: 50px;
   margin-bottom: 30px;
   font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
   color: #e8c157;
+  cursor: pointer;
+}
+
+.footerTitle:hover {
+  color: #f1f1f1;
 }
 
 .footerSubtitle {
-  font-size: 18px;
+  font-size: 15px;
   margin-left: 50px;
   font-weight: 700;
   padding-right: 5px;
   letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.footerSubtitle li:hover {
+  color: #e8c157;
 }
 
 li {
@@ -48,6 +57,28 @@ li {
   margin-right: -210px;
 }
 
+.footerSubscribe {
+  margin-top: 10px;
+  height: 30px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  padding-left: 2px;
+}
+
+.footerSubscribe::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+.subscribeBtn {
+  font-family: "Poppins", sans-serif;
+  background-color: #e8c157;
+  padding: 1px 2px 1px 2px;
+  margin-top: 2px;
+}
+
+.subscribeBtn:hover {
+  background-color: #fbb906;
+}
 @media (max-width: 1500px) {
   .footerTitle {
     display: flex;
@@ -56,17 +87,22 @@ li {
 }
 
 @media (max-width: 800px) {
-  .footerSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  .footerContainer {
+    margin: 0;
     padding: 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .footerTitle {
+    font-size: 20px;
+    width: 100%;
     margin: 0;
   }
 
   .footerSubtitle {
-    font-size: 10px;
+    font-size: 18px;
+    margin: 0;
   }
 
   .footerLevelContent {
