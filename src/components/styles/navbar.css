@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(90deg, #e0bc5f, #f8b500);
-  color: white;
+  color: #f1f1f1;
   padding-left: 8rem;
   padding-right: 10rem;
   font-family: "Bebas Neue", cursive;
@@ -39,7 +39,11 @@
 }
 
 .navbar-links li:hover {
-  background-color: rgba(85, 85, 85, 0.541);
+  background-color: #5555558a;
+}
+
+.nav-btns:hover {
+  color: #3b2323;
 }
 
 .toggle-button {

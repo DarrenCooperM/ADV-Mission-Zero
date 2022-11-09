@@ -24,19 +24,29 @@ export default function Navbar() {
         <div className="navbar-links">
           <ul>
             <li>
-              <a href="/">Own A Gym</a>
+              <a href="/" className="nav-btns">
+                Own A Gym
+              </a>
             </li>
             <li>
-              <a href="/">About Us</a>
+              <a href="/" className="nav-btns">
+                About Us
+              </a>
             </li>
             <li>
-              <a href="/">Why Us</a>
+              <a href="/" className="nav-btns">
+                Why Us
+              </a>
             </li>
             <li>
-              <a href="/">Refer a friend</a>
+              <a href="/" className="nav-btns">
+                Refer a friend
+              </a>
             </li>
             <li>
-              <a href="/">Register | Login</a>
+              <a href="/" className="nav-btns">
+                Register | Login
+              </a>
             </li>
           </ul>
         </div>

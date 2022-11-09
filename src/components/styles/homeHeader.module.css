@@ -5,7 +5,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 70vh;
-  font-family: "Nunito Sans", sans-serif;
+  /* font-family: "Nunito Sans", sans-serif; */
+  font-family: "Poppins", sans-serif;
 }
 
 .homeTitle {
@@ -100,11 +101,9 @@
 
   .inputBox::placeholder {
     font-size: 25px;
-    text-align: center;
   }
 
   .searchBtn {
-    text-align: center;
     height: 40px;
     font-size: 20px;
     padding: 0;

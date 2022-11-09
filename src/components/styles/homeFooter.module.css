@@ -21,8 +21,9 @@
   font-size: 25px;
   margin-left: 50px;
   margin-bottom: 30px;
-  font-family: "Bebas Neue", cursive;
-  letter-spacing: 4px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  color: #e8c157;
 }
 
 .footerSubtitle {
