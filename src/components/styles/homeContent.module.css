@@ -65,16 +65,13 @@
   }
 
   .card > span {
-    font-size: 17px;
+    font-size: 20px;
+    letter-spacing: 1px;
   }
 
   .imgOne {
     height: 200px;
     width: 175px;
-  }
-
-  .cardContent {
-    font-size: 12px;
   }
 
   .price {

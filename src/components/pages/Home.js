@@ -1,5 +1,5 @@
-import Navbar from "../home/navbar.js";
-import HomeHeader from "../home/homeHeaderSection";
+import Navbar from "../home/Navbar.js";
+import HomeHeader from "../home/HomeHeaderSection";
 import HomeContent from "../home/HomeContentSection";
 
 export default function Home() {
