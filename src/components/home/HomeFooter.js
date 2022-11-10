@@ -1,7 +1,14 @@
 import styles from "../styles/homeFooter.module.css";
-import { FaArrowDown } from "react-icons/fa";
+import { FaArrowDown, FaArrowRight } from "react-icons/fa";
+import { useState } from "react";
 
 export default function HomeFooter() {
+  const [isActive, setIsActive] = useState(false);
+
+  function clickedArrow() {
+    setIsActive(!isActive);
+  }
+
   return (
     <>
       <div className={styles.footerSection}>
@@ -15,9 +22,20 @@ export default function HomeFooter() {
         </div> */}
         <div className={styles.footerContainer}>
           <div className={styles.footerContentFlex}>
-            <h1 className={styles.footerTitle}>
-              GYM LOCATIONS
-              <FaArrowDown style={{ height: "12px" }}></FaArrowDown>
+            <h1 className={styles.footerTitle} onClick={clickedArrow}>
+              GYM LOCATIONS{" "}
+              {isActive ? (
+                <FaArrowDown
+                  style={{ height: "12px" }}
+                  onClick={clickedArrow}
+                ></FaArrowDown>
+              ) : (
+                <FaArrowRight
+                  style={{ height: "12px" }}
+                  onClick={clickedArrow}
+                ></FaArrowRight>
+              )}
+              {/* <FaArrowDown style={{ height: "12px" }}></FaArrowDown> */}
             </h1>
             <div className={styles.footerSubtitle}>
               <li>Auckland CBD</li>

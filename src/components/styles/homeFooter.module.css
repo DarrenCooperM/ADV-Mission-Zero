@@ -13,12 +13,11 @@
 }
 
 .footerContentFlex {
-  width: 300px;
+  width: 275px;
 }
 
 .footerTitle {
   font-size: 18px;
-  margin-left: 50px;
   margin-bottom: 30px;
   font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
@@ -32,7 +31,6 @@
 
 .footerSubtitle {
   font-size: 15px;
-  margin-left: 50px;
   font-weight: 700;
   padding-right: 5px;
   letter-spacing: 2px;
@@ -45,16 +43,6 @@
 
 li {
   list-style: none;
-}
-
-.footerLevelTitle {
-  font-size: 25px;
-  margin-bottom: 5px;
-}
-
-.footerLevelContent {
-  font-weight: 700;
-  margin-right: -210px;
 }
 
 .footerSubscribe {

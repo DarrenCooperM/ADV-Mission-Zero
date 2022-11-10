@@ -1,0 +1,47 @@
+.modalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bebas Neue", cursive;
+}
+
+.modalTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 4px;
+  font-size: 50px;
+  position: absolute;
+  margin-left: 8.5rem;
+}
+
+.modalFlex {
+  margin: 7rem 3rem 7rem 3rem;
+}
+
+.modalSignIn {
+  margin-bottom: 25px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.modalEmail {
+  margin-bottom: 7px;
+  text-align: left;
+}
+
+.modalEmailInput {
+  margin-bottom: 7px;
+  padding-left: 2px;
+}
+
+.modalPassword {
+  margin-bottom: 7px;
+  text-align: left;
+}
+
+.modalLogin {
+  text-align: center;
+}
