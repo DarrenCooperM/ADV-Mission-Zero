@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal";
 import ModalContent from "./HomeModalContent";
+import { FaTimes } from "react-icons/fa";
 
 const style = {
   position: "absolute",
@@ -20,7 +21,7 @@ const style = {
   color: "black",
   borderRadius: "6px",
   backgroundColor: "#e0bc5f",
-  boxShadow: "12px 12px 12px 12px black;",
+  boxShadow: "12px 12px 12px 12px black",
 };
 
 const btnStyle = {
@@ -31,7 +32,7 @@ const btnStyle = {
   margin: "7px 0 0 0",
 };
 
-export default function Navbar({}) {
+export default function Navbar() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -91,7 +92,19 @@ export default function Navbar({}) {
                 aria-describedby="modal-modal-description"
               >
                 <Box sx={style}>
+                  <FaTimes
+                    style={{
+                      position: "absolute",
+                      height: "40px",
+                      width: "40px",
+                      right: "1rem",
+                      top: "1rem",
+                      cursor: "pointer",
+                    }}
+                    onClick={handleClose}
+                  />
                   <ModalContent></ModalContent>
+
                   {/* <Typography
                     id="modal-modal-title"
                     variant="h6"

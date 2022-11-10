@@ -15,6 +15,7 @@
   font-size: 50px;
   position: absolute;
   margin-left: 8.5rem;
+  padding-top: 20px;
 }
 
 .modalFlex {
@@ -44,4 +45,8 @@
 
 .modalLogin {
   text-align: center;
+  margin-top: 20px;
+  padding: 2px 10px 2px 10px;
+  background-color: transparent;
+  border-radius: 6px;
 }
