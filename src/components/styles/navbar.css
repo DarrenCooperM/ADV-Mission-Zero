@@ -55,7 +55,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
-  height: 21px;
+  height: 18px;
 }
 
 .toggle-button .bar {
@@ -68,6 +68,7 @@
 @media (max-width: 600px) {
   .toggle-button {
     display: flex;
+    margin-bottom: 10px;
   }
 
   .navbar-links {

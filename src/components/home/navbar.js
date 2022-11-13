@@ -7,6 +7,8 @@ import Modal from "@mui/material/Modal";
 import ModalContent from "./HomeModalContent";
 import { FaTimes } from "react-icons/fa";
 
+// modal
+
 const style = {
   position: "absolute",
   top: "50%",
@@ -78,12 +80,15 @@ export default function Navbar() {
               </a>
             </li>
             <li>
+              {/* ------------MODAL SECTION------------ */}
               {/* <a href="/" className="nav-btns">
                 Register | Login
               </a> */}
               <Button onClick={handleOpen} sx={btnStyle}>
-                Register | Login
+                {/* Register | Login */}
+                Become a member | Login
               </Button>
+
               <Modal
                 style={{ backdropFilter: "blur(8px)" }}
                 open={open}
@@ -93,6 +98,7 @@ export default function Navbar() {
               >
                 <Box sx={style}>
                   <FaTimes
+                    title="exit"
                     style={{
                       position: "absolute",
                       height: "40px",

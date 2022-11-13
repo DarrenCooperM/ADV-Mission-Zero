@@ -4,9 +4,12 @@ import { useState } from "react";
 
 export default function HomeFooter() {
   const [isActive, setIsActive] = useState(false);
+  const [open, setOpen] = useState(false);
 
+  // DROPDOWN MENU + ARROW
   function clickedArrow() {
     setIsActive(!isActive);
+    setOpen(!open);
   }
 
   return (
@@ -24,6 +27,7 @@ export default function HomeFooter() {
           <div className={styles.footerContentFlex}>
             <h1 className={styles.footerTitle} onClick={clickedArrow}>
               GYM LOCATIONS{" "}
+              {/* ---------------ARROW CONDITIONAL RENDERING---------------  */}
               {isActive ? (
                 <FaArrowDown
                   style={{ height: "12px" }}
@@ -35,7 +39,35 @@ export default function HomeFooter() {
                   onClick={clickedArrow}
                 ></FaArrowRight>
               )}
-              {/* <FaArrowDown style={{ height: "12px" }}></FaArrowDown> */}
+              {/* ---------------DROPDOWN MENU---------------  */}
+              {open ? (
+                <ul className={styles.menu}>
+                  <li className={styles.menuItem}>
+                    <button>Newmarket</button>
+                  </li>
+                  <li className={styles.menuItem}>
+                    <button>Parnell</button>
+                  </li>
+                  <li className={styles.menuItem}>
+                    <button>Ponsonby</button>
+                  </li>
+                  <li className={styles.menuItem}>
+                    <button>Herne Bay</button>
+                  </li>
+                  <li className={styles.menuItem}>
+                    <button>Glenfield</button>
+                  </li>
+                  <li className={styles.menuItem}>
+                    <button>Takapuna</button>
+                  </li>
+                  <li className={styles.menuItem}>
+                    <button>Whangaparoa</button>
+                  </li>
+                  <li className={styles.menuItem}>
+                    <button>Silverdale</button>
+                  </li>
+                </ul>
+              ) : null}
             </h1>
             <div className={styles.footerSubtitle}>
               <li>Auckland CBD</li>

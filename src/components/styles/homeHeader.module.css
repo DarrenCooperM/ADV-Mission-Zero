@@ -98,6 +98,7 @@
 
   .inputBox {
     height: 50px;
+    margin-left: 20px;
   }
 
   .inputBox::placeholder {
@@ -107,6 +108,12 @@
   .searchBtn {
     height: 40px;
     font-size: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .inputSection > span {
+    margin: 0;
     padding: 0;
   }
 }

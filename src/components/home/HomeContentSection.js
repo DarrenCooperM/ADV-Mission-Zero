@@ -21,7 +21,7 @@ export default function HomeContentSection() {
       <div className={styles.card}>
         <img className={styles.imgOne} src={gymPic3} alt="gympic" />
         <span className={styles.cardContent}>Boxing</span>
-        <p className={styles.price}>One Outs g</p>
+        <p className={styles.price}>that us g</p>
       </div>
       <div className={styles.card}>
         <img className={styles.imgOne} src={gymPic4} alt="gympic" />

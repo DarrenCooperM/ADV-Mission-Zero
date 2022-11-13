@@ -8,7 +8,7 @@ export default function HomeModalContent() {
       <div className={styles.modalContainer}>
         <div className={styles.modalFlex}>
           <div className={styles.modalHeader}>
-            <h1 className={styles.modalSignIn}>Sign In</h1>
+            <h1 className={styles.modalSignIn}>Log In</h1>
           </div>
           <div className={styles.modalLogin}>
             <p className={styles.modalEmail}>Email</p>

@@ -36,6 +36,8 @@
 .modalEmailInput {
   margin-bottom: 7px;
   padding-left: 2px;
+  height: 25px;
+  border-radius: 4px;
 }
 
 .modalPassword {
