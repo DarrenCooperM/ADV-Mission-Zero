@@ -8,25 +8,27 @@ import gymPic4 from "../images/gymcardpic7.png";
 export default function HomeContentSection() {
   return (
     <div className={styles.homeContentContainer}>
-      <div className={styles.card}>
-        <img className={styles.imgOne} src={gymPic} alt="gympic" />
-        <span className={styles.cardContent}>Body Pump</span>
-        <p className={styles.price}>Endurance</p>
-      </div>
-      <div className={styles.card}>
-        <img className={styles.imgOne} src={gymPic2} alt="gympic" />
-        <span className={styles.cardContent}>Yoga</span>
-        <p className={styles.price}>Mobility</p>
-      </div>
-      <div className={styles.card}>
-        <img className={styles.imgOne} src={gymPic3} alt="gympic" />
-        <span className={styles.cardContent}>Boxing</span>
-        <p className={styles.price}>that us g</p>
-      </div>
-      <div className={styles.card}>
-        <img className={styles.imgOne} src={gymPic4} alt="gympic" />
-        <span className={styles.cardContent}>Resistance Training</span>
-        <p className={styles.price}>Strength</p>
+      <div className={styles.homeFlex}>
+        <div className={styles.card}>
+          <img className={styles.imgOne} src={gymPic} alt="gympic" />
+          <span className={styles.cardContent}>Body Pump</span>
+          {/* <p className={styles.price}>Endurance</p> */}
+        </div>
+        <div className={styles.card}>
+          <img className={styles.imgOne} src={gymPic2} alt="gympic" />
+          <span className={styles.cardContent}>Yoga</span>
+          {/* <p className={styles.price}>Mobility</p> */}
+        </div>
+        <div className={styles.card}>
+          <img className={styles.imgOne} src={gymPic3} alt="gympic" />
+          <span className={styles.cardContent}>Boxing</span>
+          {/* <p className={styles.price}>that us g</p> */}
+        </div>
+        <div className={styles.card}>
+          <img className={styles.imgOne} src={gymPic4} alt="gympic" />
+          <span className={styles.cardContent}>Resistance Training</span>
+          {/* <p className={styles.price}>Strength</p> */}
+        </div>
       </div>
     </div>
   );

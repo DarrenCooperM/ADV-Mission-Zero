@@ -4,21 +4,26 @@
   font-family: "Bebas Neue", cursive;
 }
 
+.footerFlex {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 100px 0;
+}
+
 .footerContainer {
   letter-spacing: 1px;
   text-decoration: none;
-  padding: 50px 0 100px 0;
-  display: flex;
-  justify-content: center;
 }
 
 .footerContentFlex {
-  width: 275px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .footerTitle {
   font-size: 18px;
   margin-bottom: 30px;
+  width: 225px;
   font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
   color: #e8c157;
@@ -33,7 +38,7 @@
 .footerSubtitle {
   font-size: 15px;
   font-weight: 700;
-  padding-right: 5px;
+  width: 225px;
   letter-spacing: 2px;
   cursor: pointer;
 }
@@ -52,6 +57,10 @@ li {
   width: 100%;
   font-family: "Poppins", sans-serif;
   padding-left: 2px;
+  border: 1px solid #fbb906;
+  background-color: transparent;
+  border-radius: 4px;
+  color: #f1f1f1;
 }
 
 .footerSubscribe::placeholder {
@@ -120,10 +129,18 @@ li {
   .footerContainer {
     margin: 0;
     padding: 20px 0 0 0;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+  }
+  .footerContentFlex {
+    margin: 0;
+    padding: 0;
   }
 
+  .footerFlex {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   .footerTitle {
     font-size: 20px;
     margin: 0;
@@ -136,5 +153,10 @@ li {
 
   .footerLevelContent {
     font-size: 10px;
+  }
+
+  .menu {
+    margin-top: 2.7rem;
+    position: absolute;
   }
 }

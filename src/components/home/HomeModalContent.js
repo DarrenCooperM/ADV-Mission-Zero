@@ -1,10 +1,11 @@
+// import { height } from "@mui/system";
 import React from "react";
 import styles from "../styles/homeModalContent.module.css";
 
 export default function HomeModalContent() {
   return (
     <div>
-      <h1 className={styles.modalTitle}>AKL GYM BROS.</h1>
+      <h1 className={styles.modalTitle}>AKL GYM BROS</h1>
       <div className={styles.modalContainer}>
         <div className={styles.modalFlex}>
           <div className={styles.modalHeader}>
@@ -17,8 +18,8 @@ export default function HomeModalContent() {
               type="text"
               required="required"
               autocomplete="off"
-              name="email"
-              placeholder="Email"
+              name="Email"
+              placeholder="JohnDoe@email.com"
             ></input>
             <p className={styles.modalPassword}>Password</p>
             <input
@@ -27,7 +28,7 @@ export default function HomeModalContent() {
               required="required"
               autocomplete="off"
               name="email"
-              placeholder="Password"
+              placeholder="Must have atleast 6 characters"
             ></input>
             <br></br>
             <button className={styles.modalLogin}>Log in</button>
@@ -45,7 +46,7 @@ export default function HomeModalContent() {
               required="required"
               autocomplete="off"
               name="email"
-              placeholder="Email"
+              placeholder="JohnDoe@email.com"
             ></input>
             <p className={styles.modalPassword}>Password</p>
             <input
@@ -54,7 +55,7 @@ export default function HomeModalContent() {
               required="required"
               autocomplete="off"
               name="email"
-              placeholder="Password"
+              placeholder="Must have atleast 6 characters"
             ></input>
             <br></br>
             <button className={styles.modalLogin}>Sign Up</button>

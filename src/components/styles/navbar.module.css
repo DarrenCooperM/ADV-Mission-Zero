@@ -1,0 +1,171 @@
+.navbar {
+  background: linear-gradient(90deg, #e0bc5f, #f8b500);
+  color: #f1f1f1;
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+  align-items: center;
+}
+
+.navbarContainer {
+  width: 100%;
+  padding: 6px 16px 6px 16px;
+  border-bottom: 1px solid #000;
+}
+
+.navbarFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+
+.brandTitle {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.brandTitle:hover {
+  color: #483636;
+}
+
+.navbarLinks ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbarLinks li {
+  list-style: none;
+  transition: 0.4s ease;
+}
+
+.navbarLinks li a {
+  text-decoration: none;
+  color: #f1f1f1;
+  padding: 1rem;
+  display: block;
+}
+
+.navbarLinks li:hover {
+  background-color: #5555558a;
+}
+
+.navBtns:hover {
+  color: #3b2323;
+}
+
+/* .navBtns:focus {
+  color: #3b2323;
+  background-color: #5555558a;
+} */
+
+.toggleButton {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 18px;
+}
+
+.toggleButton .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  color: #000;
+  font-size: 17px;
+  font-family: "Bebas Neue", cursive;
+
+  border: 1px solid grey;
+  width: 200px;
+  border-radius: 6px;
+}
+
+.menu > li {
+  margin: 0;
+
+  background-color: #e8c157;
+}
+
+.menu > li:hover {
+  background-color: #fbb906;
+}
+
+.menu > li > button {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 5px;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+@media (max-width: 1500px) {
+  .toggleButton {
+    display: flex;
+  }
+
+  .navbarLinks {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbarContainer {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbarLinks ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbarLinks li {
+    text-align: center;
+  }
+
+  .navbarLinks li a {
+    padding: 0;
+  }
+
+  .navbarLinks.active {
+    display: flex;
+  }
+
+  .brandTitle {
+    display: none;
+  }
+}
