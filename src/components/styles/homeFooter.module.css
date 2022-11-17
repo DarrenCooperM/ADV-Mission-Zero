@@ -118,14 +118,7 @@ li {
   cursor: pointer;
 }
 
-@media (max-width: 1500px) {
-  .footerTitle {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .footerContainer {
     margin: 0;
     padding: 20px 0 0 0;
@@ -144,6 +137,43 @@ li {
   .footerTitle {
     font-size: 20px;
     margin: 0;
+  }
+
+  .footerSubtitle {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .footerLevelContent {
+    font-size: 10px;
+  }
+
+  .menu {
+    margin-top: 2.7rem;
+    position: absolute;
+  }
+}
+
+@media (max-width: 800px) {
+  .footerContainer {
+    margin: 0;
+    padding: 20px 0 0 0;
+  }
+  .footerContentFlex {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footerFlex {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: col;
+    flex-wrap: wrap;
+  }
+  .footerTitle {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 20px;
   }
 
   .footerSubtitle {

@@ -6,7 +6,7 @@ export default function HomeHeaderSection() {
     <div className={styles.homeContent}>
       <div className={styles.homeBackgroundImg}>
         <div className={styles.homeContainer}>
-          <h1 className={styles.homeTitle}>Wanna get a pump?</h1>
+          <h1 className={styles.homeTitle}>Time to get a pump!</h1>
           <p className={styles.homeSubTitle}>
             Memberships from $23.99 per week
           </p>
