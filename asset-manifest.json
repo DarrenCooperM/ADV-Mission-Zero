@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ADV-Mission-Zero/static/css/main.a3ae7efd.css",
+    "main.js": "/ADV-Mission-Zero/static/js/main.ee432c6f.js",
+    "static/js/787.cda612ba.chunk.js": "/ADV-Mission-Zero/static/js/787.cda612ba.chunk.js",
+    "static/media/classImgOne.png": "/ADV-Mission-Zero/static/media/classImgOne.bc7f39ad2ee7409322dc.png",
+    "static/media/backgroundImgGYM.png": "/ADV-Mission-Zero/static/media/backgroundImgGYM.212b358a84e308e4f305.png",
+    "static/media/gymImgTw0.png": "/ADV-Mission-Zero/static/media/gymImgTw0.f7a1393d4fe1cdcc6ecd.png",
+    "static/media/gymcardpic.png": "/ADV-Mission-Zero/static/media/gymcardpic.adb5ce9b44b9ce58556b.png",
+    "static/media/gymcardpic7.png": "/ADV-Mission-Zero/static/media/gymcardpic7.a7478adede2421918982.png",
+    "index.html": "/ADV-Mission-Zero/index.html",
+    "main.a3ae7efd.css.map": "/ADV-Mission-Zero/static/css/main.a3ae7efd.css.map",
+    "main.ee432c6f.js.map": "/ADV-Mission-Zero/static/js/main.ee432c6f.js.map",
+    "787.cda612ba.chunk.js.map": "/ADV-Mission-Zero/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a3ae7efd.css",
+    "static/js/main.ee432c6f.js"
+  ]
+}
