@@ -70,7 +70,7 @@ export default function HomeFooter() {
                   </ul>
                 ) : null}
               </h1>
-              <div className={styles.footerSubtitle}>
+              <div className={styles.footerAddress}>
                 <li>Auckland CBD</li>
                 <li>Level 5/115 Queen Street, CBD</li>
                 <li>Auckland</li>
@@ -95,7 +95,7 @@ export default function HomeFooter() {
             </div>
             <div className={styles.footerContentFlex}>
               <h1 className={styles.footerTitle}>Try to catch up</h1>
-              <div className={styles.footerSubtitle}>
+              <div className={styles.footerAddress}>
                 <li>
                   Subscribe to get tips and tricks for your training and
                   nutrition

@@ -43,6 +43,13 @@
   cursor: pointer;
 }
 
+.footerAddress {
+  font-size: 17px;
+  font-weight: 700;
+  width: 225px;
+  letter-spacing: 3px;
+}
+
 .footerSubtitle li:hover {
   color: #e8c157;
 }

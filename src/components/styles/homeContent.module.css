@@ -10,8 +10,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 20rem;
-  margin-right: 20rem;
+  margin-left: 12em;
+  margin-right: 12em;
 }
 
 .card {
@@ -68,11 +68,11 @@
 
 @media (max-width: 1300px) {
   .homeFlex {
-    margin-left: 7rem;
-    margin-right: 7rem;
+    margin-left: 0;
+    margin-right: 0;
   }
   .card {
-    margin: 1rem;
+    margin: 0.75rem;
     padding: 0;
   }
 }

@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "../styles/homeContent.module.css";
-import gymPic from "../images/classImgOne.png";
-import gymPic2 from "../images/gymImgTw0.png";
-import gymPic3 from "../images/gymcardpic.png";
-import gymPic4 from "../images/gymcardpic7.png";
+import gymPic from "../images/gymCardPic1.png";
+import gymPic2 from "../images/gymCardPic2.png";
+import gymPic3 from "../images/gymCardPic3.png";
+import gymPic4 from "../images/gymCardPic4.png";
 
 const card1 = {
   Title: "Body Pump",
