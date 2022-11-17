@@ -3,9 +3,9 @@ import { FaSearch } from "react-icons/fa";
 
 export default function HomeHeaderSection() {
   return (
-    <div className={styles.homeContent}>
-      <div className={styles.homeBackgroundImg}>
-        <div className={styles.homeContainer}>
+    <div className={styles.homeContainer}>
+      <div className={styles.homeBackground}>
+        <div className={styles.homeContentSection}>
           <h1 className={styles.homeTitle}>Time to get a pump!</h1>
           <p className={styles.homeSubTitle}>
             Memberships from $23.99 per week

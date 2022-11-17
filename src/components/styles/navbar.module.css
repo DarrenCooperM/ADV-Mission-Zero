@@ -61,6 +61,16 @@
   background-color: #5555558a;
 }
 
+.navBtns {
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  color: #f1f1f1;
+  padding: 1rem;
+  font-size: 20px;
+  font-family: "Bebas Neue", cursive;
+}
+
 .navBtns:hover {
   color: #3b2323;
 }
@@ -98,11 +108,11 @@
   padding: 0;
 
   color: #000;
-  font-size: 17px;
+  /* font-size: 10px; */
   font-family: "Bebas Neue", cursive;
 
   border: 1px solid grey;
-  width: 200px;
+  width: 150px;
   border-radius: 6px;
 }
 

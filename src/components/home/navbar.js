@@ -1,15 +1,13 @@
 import styles from "../styles/navbar.module.css";
-import logo from "../images/navbarlogo.png";
 import * as React from "react";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal";
 import ModalContent from "./HomeModalContent";
 import { FaTimes } from "react-icons/fa";
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import { FaArrowDown, FaArrowRight } from "react-icons/fa";
 
-// modal
+// MODAL STYLE
 const style = {
   position: "absolute",
   top: "50%",
@@ -27,24 +25,15 @@ const style = {
   boxShadow: "12px 12px 12px 12px black",
 };
 
-const btnStyle = {
-  color: "#f1f1f1",
-  display: "block",
-  fontFamily: "Bebas Neue, cursive",
-  fontSize: "19px",
-  margin: "7px 0 0 0",
-};
-
 export default function Navbar() {
-  // modal
+  // MODAL
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  // dropdown menu
+  // DROPDOWN MENU
   const [isActive, setIsActive] = useState(false);
   const [dropdown, setDropdown] = useState(false);
-  // const btnRef = useRef();
 
   // DROPDOWN MENU + ARROW
   function handleDrop(e) {
@@ -53,29 +42,11 @@ export default function Navbar() {
     setDropdown(!dropdown);
   }
 
-  // useEffect(() => {
-  //   const closeDropDown = (e) => {
-  //     if (e.path[0] !== btnRef.current) {
-  //       setOpen(false);
-  //     }
-  //   };
-  //   document.body.addEventListener("click", closeDropDown);
-  //   return () => document.body.removeEventListener("click", closeDropDown);
-  // }, []);
-
   return (
     <header className={styles.navbar}>
       <div className={styles.navbarContainer}>
         <div className={styles.navbarFlex}>
           <div className={styles.brandTitle}>
-            {/* <img
-              src={logo}
-              alt="logo"
-              style={{
-                height: "25px",
-                width: "25px",
-              }}
-            ></img> */}
             <svg
               style={{
                 width: "40px",
@@ -103,12 +74,8 @@ export default function Navbar() {
           <div className={styles.navbarLinks}>
             <ul>
               <li>
-                <a
-                  href="/"
-                  //  ref={btnRef}
-                  className={styles.navBtns}
-                  onClick={handleDrop}
-                >
+                {/* ----------------- DROPDOWN MENU ------------------  */}
+                <a href="/" className={styles.navBtns} onClick={handleDrop}>
                   Gym Locations
                   {isActive ? (
                     <FaArrowDown
@@ -168,13 +135,9 @@ export default function Navbar() {
               </li>
               <li>
                 {/* ------------MODAL SECTION------------ */}
-                {/* <a href="/" className="nav-btns">
-                Register | Login
-              </a> */}
-                <Button onClick={handleOpen} sx={btnStyle}>
-                  {/* Register | Login */}
-                  Become a member | Login
-                </Button>
+                <button href="" onClick={handleOpen} className={styles.navBtns}>
+                  Register | Login
+                </button>
 
                 <Modal
                   style={{ backdropFilter: "blur(8px)" }}
