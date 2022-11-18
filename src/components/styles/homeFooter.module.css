@@ -125,7 +125,7 @@ li {
   cursor: pointer;
 }
 
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .footerContainer {
     margin: 0;
     padding: 20px 0 0 0;
@@ -161,7 +161,7 @@ li {
   }
 }
 
-@media (max-width: 800px) {
+@media only screen and (max-width: 699px) {
   .footerContainer {
     margin: 0;
     padding: 20px 0 0 0;

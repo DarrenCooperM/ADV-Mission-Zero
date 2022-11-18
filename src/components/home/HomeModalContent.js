@@ -1,64 +1,83 @@
-// import { height } from "@mui/system";
 import React from "react";
 import styles from "../styles/homeModalContent.module.css";
+import { FaTimes } from "react-icons/fa";
 
-export default function HomeModalContent() {
+export default function ModalContent({ closeModal }) {
   return (
-    <div>
-      <h1 className={styles.modalTitle}>AKL GYM BROS</h1>
-      <div className={styles.modalContainer}>
-        <div className={styles.modalFlex}>
-          <div className={styles.modalHeader}>
-            <h1 className={styles.modalSignIn}>Log In</h1>
-          </div>
-          <div className={styles.modalLogin}>
-            <p className={styles.modalEmail}>Email</p>
-            <input
-              className={styles.modalEmailInput}
-              type="text"
-              required="required"
-              autocomplete="off"
-              name="Email"
-              placeholder="JohnDoe@email.com"
-            ></input>
-            <p className={styles.modalPassword}>Password</p>
-            <input
-              className={styles.modalEmailInput}
-              type="password"
-              required="required"
-              autocomplete="off"
-              name="email"
-              placeholder="Must have atleast 6 characters"
-            ></input>
-            <br></br>
-            <button className={styles.modalLogin}>Log in</button>
-          </div>
+    <div className={styles.modalBackground} onClick={() => closeModal(false)}>
+      {/* function below is to stop modal from closing when clicking on the modal itself  */}
+      <div
+        className={styles.modalContainer}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className={styles.closeBtn}>
+          <FaTimes
+            title="exit"
+            className={styles.closeBtn}
+            onClick={() => {
+              closeModal(false);
+            }}
+          />
         </div>
-        <div className={styles.modalFlex}>
-          <div className={styles.modalHeader}>
-            <h1 className={styles.modalSignIn}>Register</h1>
+        <div className={styles.modalContent}>
+          <div className={styles.modalFlex}>
+            <div className={styles.modalTitle}>
+              <h1 className={styles.loginTitle}>Log In</h1>
+            </div>
+            <div>
+              <input
+                className={styles.modalInput}
+                type="text"
+                required="required"
+                autocomplete="off"
+                name="Email"
+                placeholder="JohnDoe@email.com"
+              ></input>
+            </div>
+            <div>
+              <input
+                className={styles.modalInput}
+                type="password"
+                required="required"
+                autocomplete="off"
+                name="password"
+                placeholder="Must have atleast 6 characters"
+              ></input>
+            </div>
+
+            <div className={styles.loginFlex}>
+              <button className={styles.loginBtn}>Login</button>
+            </div>
           </div>
-          <div className={styles.modalLogin}>
-            <p className={styles.modalEmail}>Email</p>
-            <input
-              className={styles.modalEmailInput}
-              type="text"
-              required="required"
-              autocomplete="off"
-              name="email"
-              placeholder="JohnDoe@email.com"
-            ></input>
-            <p className={styles.modalPassword}>Password</p>
-            <input
-              className={styles.modalEmailInput}
-              type="password"
-              required="required"
-              autocomplete="off"
-              name="email"
-              placeholder="Must have atleast 6 characters"
-            ></input>
-            <br></br>
-            <button className={styles.modalLogin}>Sign Up</button>
+          <div className={styles.modalFlex}>
+            <div className={styles.modalTitle}>
+              <h1 className={styles.loginTitle}>Register</h1>
+            </div>
+            <div className={styles.modalBody}>
+              <div>
+                <input
+                  className={styles.modalInput}
+                  type="text"
+                  required="required"
+                  autocomplete="off"
+                  name="Email"
+                  placeholder="JohnDoe@email.com"
+                ></input>
+              </div>
+              <div>
+                <input
+                  className={styles.modalInput}
+                  type="password"
+                  required="required"
+                  autocomplete="off"
+                  name="password"
+                  placeholder="Must have atleast 6 characters"
+                ></input>
+              </div>
+            </div>
+            <div className={styles.loginFlex}>
+              <button className={styles.loginBtn}>Login</button>
+            </div>
           </div>
         </div>
       </div>

@@ -1,62 +1,106 @@
-.modalContainer {
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000080;
+  backdrop-filter: blur(8px);
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Bebas Neue", cursive;
+  z-index: 40;
 }
 
-.modalTitle {
+.modalContainer {
+  width: 40%;
+  height: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #9f7f00, #110000);
+  box-shadow: 12px 12px 12px 12px black;
+}
+
+.closeBtn {
+  color: white;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-right: 10px;
+}
+
+.xBtn {
+  font-size: 25px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+.modalContent {
+  width: 90%;
+  height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   font-family: "Bebas Neue", cursive;
   letter-spacing: 4px;
-  font-size: 50px;
-  /* position: absolute; */
-  /* padding-top: 20px; */
-  /* margin-top: 30px; */
-  padding: 15px 10px 15px 10px;
-  /* border: 2px solid #000; */
 }
 
 .modalFlex {
-  margin: 2rem 3rem 7rem 3rem;
+  padding: 0 50px 0 50px;
 }
 
-.modalSignIn {
-  margin-bottom: 25px;
+.loginTitle {
+  font-weight: 400;
+  color: white;
   text-align: center;
-  letter-spacing: 3px;
+  padding-bottom: 30px;
 }
 
-.modalEmail {
-  margin-bottom: 7px;
-  text-align: left;
+.modalInput {
+  padding: 10px 50px;
+  margin-bottom: 5%;
+  border-radius: 8px;
 }
 
-.modalEmailInput {
-  width: 200px;
-  margin-bottom: 7px;
-  padding-left: 2px;
-  height: 25px;
-  border-radius: 4px;
+.modalInput:placeholder-shown {
+  padding-left: 4px;
 }
 
-.modalEmailInput:placeholder-shown {
-  font-size: 11px;
+.loginFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.modalPassword {
-  margin-bottom: 7px;
-  text-align: left;
-}
-
-.modalLogin {
+.loginBtn {
+  padding: 8px 20px;
+  border: none;
   text-align: center;
-  margin-top: 20px;
-  padding: 2px 10px 2px 10px;
-  background-color: transparent;
-  border-radius: 6px;
-  cursor: pointer;
+  text-decoration: none;
+  background-color: #9f7f00;
+  color: white;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.loginBtn:hover {
+  background-color: #5555558a;
+}
+
+@media only screen and (max-width: 699px) {
+  .modalContainer {
+    width: 85%;
+    height: 60%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .modalInput {
+    padding: 10px 30px;
+  }
 }

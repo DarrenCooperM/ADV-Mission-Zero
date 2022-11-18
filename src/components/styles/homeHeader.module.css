@@ -105,7 +105,7 @@
   color: black;
 }
 
-@media (max-width: 1300px) {
+@media only screen and (max-width: 1300px) {
   .homeContainer {
     padding: 0;
     padding-top: 6rem;
@@ -127,7 +127,7 @@
   }
 }
 
-@media (max-width: 960px) {
+@media only screen and (max-width: 950px) {
   .homeContainer {
     padding: 0;
     padding-top: 6rem;
@@ -141,7 +141,7 @@
     font-size: 60px;
   }
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   /* .homeContent {
     display: flex;
     flex-direction: column;

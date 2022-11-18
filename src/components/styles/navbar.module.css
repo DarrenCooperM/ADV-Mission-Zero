@@ -1,7 +1,10 @@
 .navbar {
-  background: linear-gradient(90deg, #e0bc5f, #f8b500);
+  background: linear-gradient(90deg, #e0bb5fd3, #f8b600bf);
   color: #f1f1f1;
   font-family: "Bebas Neue", cursive;
+  position: fixed;
+  z-index: 40;
+  width: 100%;
   /* display: flex;
   flex-direction: column;
   align-items: center; */
@@ -140,13 +143,13 @@
   cursor: pointer;
 }
 
-@media (max-width: 1700px) {
+@media only screen and (max-width: 1699px) {
   .brandTitle {
     margin-right: 10rem;
   }
 }
 
-@media (max-width: 1500px) {
+@media only screen and (max-width: 1000px) {
   .toggleButton {
     display: flex;
   }
