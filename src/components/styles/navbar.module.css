@@ -8,6 +8,11 @@
   /* display: flex;
   flex-direction: column;
   align-items: center; */
+  transition: 0.9s ease-in-out;
+}
+
+.navbar:hover {
+  background: linear-gradient(90deg, #e0bb5f, #f8b600);
 }
 
 .navbarContainer {

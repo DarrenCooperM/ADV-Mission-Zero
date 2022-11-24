@@ -1,7 +1,7 @@
 import styles from "../styles/homeHeader.module.css";
 import { FaSearch } from "react-icons/fa";
 
-export default function HomeHeaderSection() {
+export default function HomeHeaderSection({ setSearch }) {
   return (
     <div className={styles.homeContainer}>
       <div className={styles.homeBackground}>
@@ -16,7 +16,10 @@ export default function HomeHeaderSection() {
             className={styles.inputBox}
             title="Search"
             type="text"
-            placeholder="Search for a local gym"
+            placeholder="Classes e.g. Body Pump"
+            onChange={(e) => {
+              setSearch(e.target.value);
+            }}
           ></input>
           <span>
             <FaSearch
