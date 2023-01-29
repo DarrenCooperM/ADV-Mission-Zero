@@ -1,4 +1,8 @@
 <div align="center">
+  <h1> Quick Overview of this project </h1>
+  <p> There are two separate projects intregrated into this frontend application. The details are as follows: </p>
+
+<div align="center">
   <h1> Mission Zero </h1>
   <p> Built an application using React that resembles the wireframe provided in the session. </p>
   <p> Make webpage responsive to mobiles.</p>
