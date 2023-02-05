@@ -22,7 +22,7 @@ export default function ModalContent({ closeModal }) {
         <div className={styles.modalContent}>
           <div className={styles.modalFlex}>
             <div className={styles.modalTitle}>
-              <h1 className={styles.loginTitle}>Log In</h1>
+              <h1>Log In</h1>
             </div>
             <div>
               <input
@@ -31,7 +31,7 @@ export default function ModalContent({ closeModal }) {
                 required="required"
                 autocomplete="off"
                 name="Email"
-                placeholder="JohnDoe@email.com"
+                placeholder="Username"
               ></input>
             </div>
             <div>
@@ -41,17 +41,17 @@ export default function ModalContent({ closeModal }) {
                 required="required"
                 autocomplete="off"
                 name="password"
-                placeholder="Must have atleast 6 characters"
+                placeholder="Password"
               ></input>
             </div>
 
             <div className={styles.loginFlex}>
-              <button className={styles.loginBtn}>Login</button>
+              <button>Login</button>
             </div>
           </div>
           <div className={styles.modalFlex}>
             <div className={styles.modalTitle}>
-              <h1 className={styles.loginTitle}>Register</h1>
+              <h1>Register</h1>
             </div>
             <div className={styles.modalBody}>
               <div>
@@ -61,7 +61,7 @@ export default function ModalContent({ closeModal }) {
                   required="required"
                   autocomplete="off"
                   name="Email"
-                  placeholder="JohnDoe@email.com"
+                  placeholder="Username"
                 ></input>
               </div>
               <div>
@@ -71,12 +71,12 @@ export default function ModalContent({ closeModal }) {
                   required="required"
                   autocomplete="off"
                   name="password"
-                  placeholder="Must have atleast 6 characters"
+                  placeholder="Password"
                 ></input>
               </div>
             </div>
             <div className={styles.loginFlex}>
-              <button className={styles.loginBtn}>Login</button>
+              <button>Sign Up</button>
             </div>
           </div>
         </div>

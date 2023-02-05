@@ -131,7 +131,8 @@
 }
 
 .menu > li:hover {
-  background-color: #fbb906;
+  background-color: #000;
+  color: #f8b600;
 }
 
 .menu > li > button {
