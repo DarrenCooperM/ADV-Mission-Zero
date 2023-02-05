@@ -1,3 +1,16 @@
+<div align="center">
+  <h1> Quick Overview of this project </h1>
+  <p> There are two separate projects intregrated into this frontend application. The details are as follows: </p>
+
+<div align="center">
+  <h1> Mission Zero </h1>
+  <p> Built an application using React that resembles the wireframe provided in the session. </p>
+  <p> Make webpage responsive to mobiles.</p>
+  
+  <h1> Mission One </h1>
+  <p> Built a chatbot for turners car company and integrate it into your frontend application developed in Mission Zero</p>
+</div>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
