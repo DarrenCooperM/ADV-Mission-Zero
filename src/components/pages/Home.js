@@ -1,4 +1,4 @@
-import Navbar from "../home/Navbar";
+import { Navbar } from "../home/Navbar";
 import HomeHeader from "../home/HomeHeaderSection";
 import HomeContent from "../home/HomeContentSection";
 import HomeFooter from "../home/HomeFooter";
