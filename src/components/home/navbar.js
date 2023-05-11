@@ -4,7 +4,7 @@ import { useState } from "react";
 import styles from "../styles/navbar.module.css";
 import MySVG from "./svg";
 
-export default function Navbar({ setOpenModal }) {
+function Navbar({ setOpenModal }) {
   // DROPDOWN MENU
   const [isActive, setIsActive] = useState(false);
   const [dropdown, setDropdown] = useState(false);
@@ -110,3 +110,5 @@ export default function Navbar({ setOpenModal }) {
     </header>
   );
 }
+
+export default Navbar;
