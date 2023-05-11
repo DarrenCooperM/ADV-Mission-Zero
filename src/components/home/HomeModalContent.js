@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../styles/homeModalContent.module.css";
 import { FaTimes } from "react-icons/fa";
 

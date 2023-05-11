@@ -1,6 +1,3 @@
-// MySVG.js
-import React from "react";
-
 const MySVG = () => (
   <svg
     style={{

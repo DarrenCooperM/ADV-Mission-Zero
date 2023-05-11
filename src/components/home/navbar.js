@@ -1,7 +1,7 @@
-import styles from "../styles/navbar.module.css";
-import * as React from "react";
-import { useState } from "react";
 import { FaArrowDown, FaArrowRight } from "react-icons/fa";
+import { useState } from "react";
+
+import styles from "../styles/navbar.module.css";
 import MySVG from "./svg";
 
 export default function Navbar({ setOpenModal }) {

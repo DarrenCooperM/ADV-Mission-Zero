@@ -15,14 +15,6 @@ export default function HomeFooter() {
   return (
     <>
       <div className={styles.footerSection}>
-        {/* <div className={styles.footerContainer}>
-          <h1 className={styles.footerTitle}>COMPANY</h1>
-          <div className={styles.footerSubtitle}>
-            <li>About Us</li>
-            <li>Careers</li>
-            <li>Partners</li>
-          </div>
-        </div> */}
         <div className={styles.footerContainer}>
           <div className={styles.footerFlex}>
             <div className={styles.footerContentFlex}>
