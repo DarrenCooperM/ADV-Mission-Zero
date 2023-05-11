@@ -1,9 +1,9 @@
-import Navbar from "../home/Navbar.js";
+import Navbar from "../home/Navbar";
 import HomeHeader from "../home/HomeHeaderSection";
 import HomeContent from "../home/HomeContentSection";
 import HomeFooter from "../home/HomeFooter";
 import ModalContent from "../home/HomeModalContent";
-import Chatbot from "../home/ChatBot.js";
+import Chatbot from "../home/ChatBot";
 import { useState } from "react";
 
 export default function Home() {
